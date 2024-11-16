@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background-image: url('/static/images/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 85%;
+    margin: 30px auto;
+    max-width: 1200px;
+}
+
+.invoiceLayout {
+    background-color: rgba(255, 255, 255, 0.9); /* thêm độ trong suốt cho background */
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.invoiceLayout:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 42px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.invoiceDetails p,
+.productList p {
+    font-size: 16px;
+    color: #666;
+}
+
+.invoiceDetails p strong,
+.productList p strong {
+    font-weight: 600;
+    color: #333;
+}
+
+.productList table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.productList table th,
+.productList table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.productList table th {
+    background-color: #f8f9fa;
+    color: #333;
+    font-weight: 700;
+}
+
+.productList table td {
+    color: #555;
+}
+
+.productList table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.totalAmount {
+    margin-top: 40px;
+    background-color: #e0f7fa;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.totalAmount p {
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+    margin: 10px 0;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.button-group .btn {
+    padding: 15px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    background-color: #d32f2f;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button-group .btn:hover {
+    background-color: #c2185b;
+    transform: scale(1.05);
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    padding: 15px 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+/* Focused elements */
+button:focus, .button-group .btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}

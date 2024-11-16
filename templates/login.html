@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/loginStyle.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+	<title>LOGIN</title>
+</head>
+<body>
+
+	<div class="login">
+		<div class="title">Chào bạn!</div>
+		<div class="des">
+			Chào mừng bạn đã đến với Hoang Beauty
+		</div>
+
+        <!-- Hiển thị thông báo nếu có -->
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                <div class="alert-container">
+                    {% for category, message in messages %}
+                        <div class="alert {{ category }}">
+                            {{ message }}
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endwith %}
+
+        <div class="form">
+            <form action="/login" method="POST">
+                <div class="group">
+                    <h1>Đăng Nhập Tài Khoản</h1>
+                </div>
+                <div class="group">
+                    <i class="fa-regular fa-user"></i>
+                    <input type="text" name="username" placeholder=" " id="username" autocomplete="off" required>
+                    <label for="name">Username...</label>
+                </div>
+                <div class="group">
+                    <i class="fa-solid fa-lock"></i>
+                    <input type="password" name="password" placeholder=" " id="password" autocomplete="off" required>
+                    <i class="fa-regular fa-eye" onclick="changeTypePassword()"></i>
+                    <i class="fa-regular fa-eye-slash" onclick="changeTypePassword()"></i>
+                    <label for="password">Password...</label>
+                </div>
+                <div class="recovery">
+                    <a href=""><br>recovery password</a>
+                </div>
+                <div class="signIn">
+                    <a href="{{ url_for('index') }}"><button>Đăng Nhập</button></a>
+                </div>
+                <div class="register">
+                    Chưa có tài khoản? <a href="{{ url_for('register') }}">Đăng Ký Ngay</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+	<script src="{{ url_for('static', filename='js/register.js') }}"></script>
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

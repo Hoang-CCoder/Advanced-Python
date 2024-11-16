@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hóa Đơn</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/invoiceStyle.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="invoiceLayout">
+            <h1>Hóa Đơn</h1>
+
+            <!-- Thông tin khách hàng -->
+            <div class="invoiceDetails">
+                <h2>Thông Tin Khách Hàng</h2>
+                <p><strong>Họ tên:</strong> {{ order[0] }}</p>
+                <p><strong>Số điện thoại:</strong> {{ order[1] }}</p>
+                <p><strong>Địa chỉ:</strong> {{ order[2] }}</p>
+                <p><strong>Quốc gia:</strong> {{ order[3] }}</p>
+                <p><strong>Thành phố:</strong> {{ order[4] }}</p>
+            </div>
+
+            <!-- Thông tin tổng cộng -->
+            <div class="totalAmount">
+                <p><strong>Tổng Số Lượng:</strong> {{ order[5] }}</p>  <!-- Tổng số lượng -->
+                <p><strong>Tổng Tiền:</strong> ${{ order[6] }}</p>     <!-- Tổng tiền -->
+            </div>
+
+            <!-- Các nút hành động -->
+            <div class="button-group">
+                <button class="btn" onclick="printInvoice()">In Hóa Đơn</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function printInvoice() {
+            window.print();  // In trang hiện tại
+        }
+    </script>
+</body>
+</html>

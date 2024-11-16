@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRANG CHỦ</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <!---------Header-------->
+
+    <header>
+        <nav>
+            <a href="">TRANG CHỦ</a>
+            <a href="#end">LIÊN HỆ</a>
+            <a href="#SP">SẢN PHẨM</a>
+            <a href="{{ url_for('login') }}" id = "LG">LOGIN</a>
+        </nav>
+    </header>
+    <section>
+        <!---------Carousel-------->
+        <div class="carousel">
+            <!---------List items-------->
+            <div class="list">
+                <div class="item">
+                    <img src="/static/images/img1.jpg" alt="">
+                    <div class="content">
+                        <div class="author">Hoang Beauty</div>
+                        <div class="title"></div>
+                        <div class="topic">Nước Tẩy Trang</div>
+                        <div class="des">
+                            Nước tẩy trang là sản phẩm giúp loại bỏ lớp trang điểm, bụi bẩn và dầu thừa trên da, mang lại làn da sạch sâu mà không làm khô da. Với công thức chứa các phân tử micelle, nước tẩy trang giúp hút và loại bỏ tạp chất hiệu quả. Sản phẩm phù hợp với nhiều loại da, thường được bổ sung các thành phần làm dịu như lô hội hoặc glycerin, giúp da mềm mịn và dễ dàng hấp thụ dưỡng chất.
+                        </div>
+                        <div class="buttons">
+                            <button>XEM THÊM</button>
+                            <button>MUA NGAY</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/static/images/img2.jpg" alt="">
+                    <div class="content">
+                        <div class="author">Hoang Beauty</div>
+                        <div class="title"></div>
+                        <div class="topic">Sữa Rửa Mặt </div>
+                        <div class="des">
+                            Sữa rửa mặt là sản phẩm chăm sóc da dùng để làm sạch da mặt, loại bỏ bụi bẩn, dầu thừa, tế bào chết và cặn trang điểm. Sản phẩm này giúp làm thông thoáng lỗ chân lông, ngăn ngừa mụn và duy trì làn da sạch sẽ, tươi sáng. Tùy vào loại da (da dầu, da khô, da hỗn hợp, nhạy cảm), sữa rửa mặt có các thành phần và công thức khác nhau để phù hợp với nhu cầu chăm sóc cụ thể.
+                        </div>
+                        <div class="buttons">
+                            <button>SEE MORE</button>
+                            <button>SUBSCRIBE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/static/images/img3.jpg" alt="">
+                    <div class="content">
+                        <div class="author">Hoang Beauty</div>
+                        <div class="title"></div>
+                        <div class="topic">Serum</div>
+                        <div class="des">
+                            Serum là sản phẩm dưỡng da chứa nồng độ cao các hoạt chất giúp chăm sóc sâu và giải quyết các vấn đề cụ thể của da như lão hóa, mụn, hoặc thâm nám. Với kết cấu mỏng nhẹ và dễ thẩm thấu, serum cung cấp dưỡng chất cho da, giúp cải thiện hiệu quả nhanh chóng và sâu hơn so với các sản phẩm dưỡng da thông thường.
+                        </div>
+                        <div class="buttons">
+                            <button>SEE MORE</button>
+                            <button>SUBSCRIBE</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/static/images/img4.jpg" alt="">
+                    <div class="content">
+                        <div class="author">Hoang Beauty</div>
+                        <div class="title"></div>
+                        <div class="topic">Dưỡng Ẩm</div>
+                        <div class="des">
+                            Dưỡng ẩm là quá trình cung cấp và duy trì độ ẩm cho da, giúp da mềm mịn, ngăn ngừa khô ráp và bảo vệ da khỏi các tác nhân môi trường. Sản phẩm dưỡng ẩm thường chứa các thành phần như glycerin, hyaluronic acid, hoặc ceramide, giúp khóa ẩm và duy trì làn da khỏe mạnh, mịn màng.
+                        </div>
+                        <div class="buttons">
+                            <button>SEE MORE</button>
+                            <button>SUBSCRIBE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!---------thumbnail-------->
+            <div class="thumbnail">
+                <div class="item">
+                    <img src="/static/images/img2.jpg" alt="">
+                    <div class="content">
+                        <div class="title">
+                            Sữa Rửa Mặt
+                            <div class="des">
+            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/static/images/img3.jpg" alt="">
+                    <div class="content">
+                        <div class="title">
+                            Serum
+                            <div class="des">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/static/images/img4.jpg" alt="">
+                    <div class="content">
+                        <div class="title">
+                            Dưỡng Ẩm
+                            <div class="des">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="/static/images/img1.jpg" alt="">
+                    <div class="content">
+                        <div class="title">
+                            Nước Tẩy Trang
+                            <div class="des">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!---------arrows-------->
+            <div class="arrows">
+                <button id="prev"><</button>
+                <button id="next">></button>
+            </div>
+            <div class="time"></div>
+        </div>
+    </section>
+    <!---------special-------->
+
+    <section class = "special">
+        <h1>NHỮNG NỔI BẬT CỦA CHÚNG TÔI</h1>
+        
+        <div class="row">
+            <div class="special-col">
+                <h3>Chất Lượng Đỉnh Cao, An Tâm Tuyệt Đối</h3>
+                <p>Hoang Beauty cam kết chỉ cung cấp các sản phẩm chính hãng, được chọn lọc từ các thương hiệu uy tín và kiểm định chất lượng nghiêm ngặt để đảm bảo an toàn cho làn da của bạn.</p>
+            </div>
+            <div class="special-col">
+                <h3>Tư Vấn Chăm Sóc Cá Nhân Hóa</h3>
+                <p>Chúng tôi luôn sẵn sàng lắng nghe và tư vấn chuyên sâu, giúp bạn tìm ra những sản phẩm và quy trình chăm sóc phù hợp nhất với làn da của mình.</p>
+            </div>
+            <div class="special-col">
+                <h3>Trải Nghiệm Mua Sắm Hoàn Hảo</h3>
+                <p>Tại Hoang Beauty, chúng tôi cam kết mang đến dịch vụ nhanh chóng, giao hàng an toàn và các chương trình khuyến mãi hấp dẫn để bạn luôn có trải nghiệm mua sắm đáng nhớ.</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!------main----->
+
+    <section class="main" id = "SP">
+
+        <div class="wrap">
+            <div class="conCon">
+                <p>Rose &#127804</p>
+                <img src="/static/images/Products1.jpg" alt="">
+                <p>
+                    Sữa rửa mặt Cetaphil nổi tiếng với công thức dịu nhẹ, không chứa xà phòng, giúp làm sạch da mà không gây kích ứng, phù hợp cho mọi loại da, đặc biệt là da nhạy cảm.
+                </p>
+            </div>
+            <p class = "price">Giá : 100.000 VND</p>
+            <a href="" class = "buton"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Thêm vào giỏ hàng</a>
+        </div>
+
+        <div class="wrap">
+            <div class="conCon">
+                <p>Rose &#127799</p>
+                <img src="/static/images/Products2.jpg" alt="">
+                <p>
+                    Sữa rửa mặt La Roche-Posay chứa nước khoáng độc quyền, giúp làm dịu da và giảm kích ứng. Sản phẩm hỗ trợ làm sạch sâu, lý tưởng cho da dầu và da dễ bị mụn.
+                </p>
+            </div>
+            <p class = "price">Giá : 300.000 VND</p>
+            <a href="" class = "buton"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Thêm vào giỏ hàng</a>
+        </div>
+
+        <div class="wrap">
+            <div class="conCon">
+                <p>Rose &#127803</p>
+                <img src="/static/images/Products3.jpg" alt="">
+                <p>
+                    Nước tẩy trang La Roche-Posay nổi bật với công thức chứa nước khoáng giúp làm dịu da, phù hợp  da nhạy cảm. Nó còn dễ dàng loại bỏ lớp trang điểm và bụi bẩn mà không gây kích ứng.
+                </p>
+            </div>
+            <p class = "price">Giá : 500.000 VND</p>
+            <a href="" class = "buton"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Thêm vào giỏ hàng</a>
+        </div>
+
+        <div class="wrap">
+            <div class="conCon">
+                <p>Rose &#127799</p>
+                <img src="/static/images/Products4.jpg" alt="">
+                <p>
+                    Nước tẩy trang Ze Lift có thành phần chiết xuất tự nhiên giúp làm sạch sâu và nuôi dưỡng da. Công thức dịu nhẹ này giúp da luôn mềm mịn và không gây khô rát sau khi sử dụng.
+                </p>
+            </div>
+            <p class = "price">Giá : 450.000 VND</p>
+            <a href="" class = "buton"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Thêm vào giỏ hàng</a>
+        </div>
+
+        <div class="wrap">
+            <div class="conCon">
+                <p>Rose &#127804</p>
+                <img src="/static/images/Products5.jpg" alt="">
+                <p>
+                    Serum của The Ordinary nổi bật với các thành phần đơn giản, hiệu quả cao và giá cả phải chăng. Sản phẩm như Niacinamide 10% + Zinc 1% giúp làm sáng da và kiểm soát dầu, thích hợp cho da dầu và da mụn.
+                </p>
+            </div>
+            <p class = "price">Giá : 200.000 VND</p>
+            <a href="" class = "buton"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Thêm vào giỏ hàng</a>
+        </div>
+
+        <div class="wrap">
+            <div class="conCon">
+                <p>Rose &#127799</p>
+                <img src="/static/images/Products6.jpg" alt="">
+                <p>
+                    Torriden nổi bật với các sản phẩm chứa thành phần dưỡng ẩm sâu và làm dịu da, như serum Deep Water Light S.O.S. Serum. Chúng thích hợp cho da khô và nhạy cảm, cung cấp độ ẩm lâu dài và cải thiện kết cấu da.
+                </p>
+            </div>
+            <p class = "price">Giá : 600.000 VND</p>
+            <a href="" class = "buton"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Thêm vào giỏ hàng</a>
+        </div>
+
+        <div class="wrap">
+            <div class="conCon">
+                <p>Rose &#127803</p>
+                <img src="/static/images/Products7.jpg" alt="">
+                <p>
+                    Sản phẩm dưỡng ẩm của Hydra thường chứa các thành phần như axit hyaluronic, giúp cấp ẩm nhanh chóng và duy trì độ ẩm cho da suốt cả ngày. Các sản phẩm này phù hợp với mọi loại da, từ da khô đến da nhạy cảm.
+                </p>
+            </div>
+            <p class = "price">Giá : 359.000 VND</p>
+            <a href="" class = "buton"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Thêm vào giỏ hàng</a>
+        </div>
+
+        <div class="wrap">
+            <div class="conCon">
+                <p>Rose &#127799</p>
+                <img src="/static/images/Products8.jpg" alt="">
+                <p>
+                    Dưỡng ẩm của Klairs, đặc biệt là dòng Rich Moist Soothing Cream, giúp làm dịu và cung cấp độ ẩm sâu cho da. Sản phẩm thích hợp cho da khô và nhạy cảm, giúp da mềm mịn và không gây bí tắc lỗ chân lông.
+                </p>
+            </div>
+            <p class = "price">Giá : 399.000 VND</p>
+            <a href="" class = "buton"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Thêm vào giỏ hàng</a>
+        </div>
+
+    </section>
+
+
+
+    <!------Facilites----->
+
+    <section class="Certifications">
+        <h1>NHỮNG THÀNH TỰU CỦA CHÚNG TÔI</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem corporis debitis commodi iure, quia nesciunt enim a alias architecto ipsum temporibus aliquam? Odio neque, facere saepe libero vel assumenda voluptatum!</p>
+        
+        <div class="row">
+            <div class="Certifications-col">
+                <img src="/static/images/cert1.jpg" alt="">
+                <h3>ORGANIC CERTIFICATIONS</h3>
+                <p>"Chứng nhận Organic" từ các tổ chức uy tín như USDA Organic hoặc EU Organic. Đây là chứng nhận dành cho các sản phẩm mỹ phẩm được sản xuất từ nguyên liệu hữu cơ, không sử dụng hóa chất độc hại và bảo vệ sức khỏe người tiêu dùng.</p>
+            </div>
+            <div class="Certifications-col">
+                <img src="/static/images/cert2.jpg" alt="">
+                <h3>CRUELTY - FREE CERTIFICATIONS</h3>
+                <p>"Chứng nhận Cruelty-Free" từ tổ chức Leaping Bunny hoặc PETA. Đây là chứng nhận dành cho các thương hiệu cam kết không thử nghiệm sản phẩm trên động vật, thể hiện sự tôn trọng với động vật và đạo đức trong sản xuất mỹ phẩm.</p>
+            </div>
+            <div class="Certifications-col">
+                <img src="/static/images/cert3.jpg" alt="">
+                <h3>DERMATOLOGICALLY TESTED CERTIFICATIONS</h3>
+                <p>"Chứng nhận kiểm nghiệm da liễu rằng sản phẩm đã được thử nghiệm trên da và đảm bảo an toàn cho mọi loại da, đặc biệt là da nhạy cảm. Các thương hiệu thường nhận được chứng nhận này sau khi các sản phẩm được kiểm tra và xác nhận bởi các bác sĩ da liễu.</p>
+            </div>
+        </div>
+    </section>
+
+    <!------reviews----->
+
+    <section class="reviews">
+        <h1>ĐÁNH GIÁ CỦA KHÁCH HÀNG</h1>
+        
+        <div class="row">
+            <div class="reviews-col">
+                <img src="/static/images/user1.jpg" alt="">
+                <div>
+                    <p>Tôi thực sự hài lòng với trải nghiệm mua sắm tại Hoang Beauty. Sản phẩm chính hãng, chất lượng cao và đội ngũ tư vấn rất tận tình. Da mình đã cải thiện rõ rệt sau khi dùng các sản phẩm được giới thiệu. Cảm ơn Hoang Beauty vì sự chăm sóc chu đáo!</p>
+                    <h3>Ngọc Trâm</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+            <div class="reviews-col">
+                <img src="/static/images/user2.jpg" alt="">
+                <div>
+                    <p>Hoang Beauty đã trở thành nơi mua sắm yêu thích của tôi. Không chỉ vì các sản phẩm đa dạng và đáng tin cậy, mà còn vì dịch vụ nhanh chóng và chuyên nghiệp. Tôi luôn nhận được hàng đúng thời gian và trong tình trạng hoàn hảo. Rất đáng tin cậy!</p>
+                    <h3>Minh Huyền</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!------Call To Action----->
+
+    <section class="cta">
+        <h1>Đăng ký để nhận ưu đãi đặc biệt và cập nhật các sản phẩm mới!</h1>
+        <p>Nhận ngay mã giảm giá 10% khi bạn đăng ký nhận bản tin của chúng tôi.</p>
+        <a href="#LG">ĐĂNG NHẬP</a>
+    </section>
+    
+
+    <!------Footer----->
+
+    <section class="footer" id="end">
+        <h4>About US</h4>
+        <div class="wrapper">
+            <div class="icon Face">
+                <div class="tooltip">Facebook</div>
+                <span><i class="fa-brands fa-facebook-f"></i></span>
+            </div>
+            <div class="icon Ins">
+                <div class="tooltip">Instagram</div>
+                <span><i class="fab fa-instagram"></i></span>
+            </div>
+            <div class="icon Twitter">
+                <div class="tooltip">Twitter</div>
+                <span><i class="fab fa-twitter"></i></span>
+            </div>
+            <div class="icon Threads">
+                <div class="tooltip">Threads</div>
+                <span><i class="fab fa-threads"></i></span>
+            </div>
+            <div class="icon Tiktok">
+                <div class="tooltip">Tiktok</div>
+                <span><i class="fab fa-tiktok"></i></span>
+            </div>
+            <div class="icon Youtube">
+                <div class="tooltip">Youtube</div>
+                <span><i class="fab fa-youtube"></i></span>
+            </div>
+        </div>
+        <div class="heart">
+            <p>Made with <i class="fa-solid fa-heart"></i> © 2024 Hoang Beauty. Tất cả các quyền được bảo lưu.</p>
+        </div>
+    </section>
+
+
+
+<!--------------JavaScript for Toggle Menu---------->
+    <script src="{{ url_for('static', filename='js/app.js') }}">
+
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+
+
+</body>
+</html>

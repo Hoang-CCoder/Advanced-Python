@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOPPING CART</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cartStyle.css') }}">
+</head>
+<body>
+    
+    <div class="container">
+        <header>
+            <h1>LIST PRODUCT</h1>   
+            <div class="iconCart">
+                <img src="/static/images/cart.jpg" alt="">
+                <div class="totalQuantity">0</div>
+            </div>
+        </header>
+
+        <div class="listProduct">
+            <div class="item">
+                <img src="/static/images/Products1.jpg" alt="">
+                <h2>Product Name</h2>
+                <div class="price">250.000 VND</div>
+                <button class = "buton">Thêm vào giỏ hàng</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="cart">
+        <h2>GIỎ HÀNG</h2>
+        <div class="listCart">
+            <div class="item">
+                <img src="/static/images/Products2.jpg" alt="">
+                <div class="content">
+                    <div class="name">
+                        Product name
+                    </div>
+                    <div class="price">
+                        $50 / 1 Sản Phẩm
+                    </div>
+                </div>
+                <div class="quantity">
+                    <button>-</button>
+                    <span class="value">3</span>
+                    <button>+</button>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <div class="close">CLOSE</div>
+            <div class="checkout">
+                <a href="{{ url_for('checkout') }}">
+                    CHECKOUT
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/cartApp.js') }}"></script>
+</body>
+</html>
